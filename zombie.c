@@ -10,8 +10,8 @@ int main()
     if(pid > 0)    //if pid greater than 0 - parent process
 
     {
-        printf("This is the parent process\n");
-        sleep(10);  //to create zombie process we can’t use wait(), but we can use sleep() systemcall.
+        printf("This is the parent process.\n");
+        sleep(20);  //to create zombie process we can’t use wait(), but we can use sleep() systemcall.
 
 }
     else if (pid == 0)    //if pid equal 0 - child process
